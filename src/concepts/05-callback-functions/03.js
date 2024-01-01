@@ -7,9 +7,7 @@ const reduce = (array, manipulator, accumulator) => {
   return accumulator;
 };
 
-const add = (a, b) => {
-  return a + b;
-};
+const add = (a, b) => a + b;
 
 const summed = reduce([1, 2, 3], add, 0);
 
