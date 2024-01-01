@@ -22,6 +22,6 @@ const formatName = (str) => {
   return str;
 };
 
-const result = formatName("john,smith");
+const result = formatName("bob,smith");
 
 console.log(result);

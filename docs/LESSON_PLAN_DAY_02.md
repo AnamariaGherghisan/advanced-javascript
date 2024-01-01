@@ -2,7 +2,9 @@
 
 ## Schedule
 
-#### 10:00 - 10:15 (15 mins)
+#### 10:00 - 10:15 (1 hr 15 mins)
+
+- Object Oriented Programming
 
 #### 10:15 - 11:15 (1 hr)
 

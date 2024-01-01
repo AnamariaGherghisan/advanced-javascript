@@ -1,14 +1,10 @@
-const greet = function (message) {
-  console.log(`Welcome ${this.name} - ${message}!!`);
+const greet = function (msg1, msg2) {
+  console.log(`Welcome ${this.name} - ${msg1} | ${msg2}!!`);
 };
 
 const user1 = { name: "Bob" };
 const user2 = { name: "Alice" };
 
-const myGreet = function () {
-  greet.call(user1);
-};
-
-myGreet();
-greet.call(user2, "JavaScript");
-greet.apply(user1, ["JavaScript"]);
+greet.call(user1);
+greet.call(user2, "JavaScript", "React");
+greet.apply(user1, ["JavaScript", "React"]);
