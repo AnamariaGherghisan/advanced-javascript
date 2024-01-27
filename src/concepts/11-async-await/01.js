@@ -1,21 +1,12 @@
-const axios = require("axios");
+async function createFlow() {
+  const response = await fetch("https://api.github.com/orgs/bookingcom");
 
-const getApiData = async (url) => {
-  try {
-    const response1 = await axios.get(url);
-
-    console.log(response1?.data?.login);
-    console.log("me first");
-
-    const response2 = await axios.get(url);
-
-    console.log(response2?.data?.html_url);
-    console.log("me second");
-  } catch (error) {
-    console.log(`[ERROR]: Failed to retrieve data | ${error.message}`);
+  if (response.ok) {
+    const data = await response.json();
+    console.log(data);
+  } else {
+    throw new Error("OOPS");
   }
-};
+}
 
-getApiData("https://api.github.com/users/surajverma2587");
-
-// getApiData("https://api.github.com/something");
+createFlow();

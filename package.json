@@ -39,5 +39,9 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "inquirer": "^8.0.0"
   }
 }

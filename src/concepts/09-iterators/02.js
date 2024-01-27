@@ -1,7 +1,7 @@
-const createFunction = (array) => {
+const createNextFunction = (array) => {
   let i = 0;
 
-  const getCurrentItem = () => {
+  const next = () => {
     const currentItem = array[i];
 
     i += 1;
@@ -9,16 +9,16 @@ const createFunction = (array) => {
     return currentItem;
   };
 
-  return getCurrentItem;
+  return next;
 };
 
-const nextElement = createFunction([1, 2, 3]);
+const next = createNextFunction([1, 2, 3]);
 
-const element1 = nextElement();
+const element1 = next();
 console.log(element1);
 
-const element2 = nextElement();
+const element2 = next();
 console.log(element2);
 
-const element3 = nextElement();
+const element3 = next();
 console.log(element3);

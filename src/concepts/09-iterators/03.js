@@ -21,7 +21,7 @@ const iterator = (array) => {
     }
   };
 
-  return { next, index };
+  return { next };
 };
 
 const myArray = iterator([1, 2, 3]);
