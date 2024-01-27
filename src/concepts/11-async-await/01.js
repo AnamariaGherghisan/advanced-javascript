@@ -1,4 +1,5 @@
 async function createFlow() {
+  console.log("start");
   const response = await fetch("https://api.github.com/orgs/bookingcom");
 
   if (response.ok) {
@@ -10,3 +11,5 @@ async function createFlow() {
 }
 
 createFlow();
+
+console.log("end");
