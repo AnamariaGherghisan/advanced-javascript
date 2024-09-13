@@ -7,6 +7,15 @@ var user = "Alice";
 
 console.log(user);
 
+if (50 === 50) {
+  var num1 = 1;
+  console.log(num1);
+}
+
+num1 = 2;
+
+console.log(num1);
+
 const formatName = (str) => {
   {
     let fName, lName;

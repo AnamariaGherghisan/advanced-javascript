@@ -1,7 +1,7 @@
 const greet = function () {
   console.log(`Welcome ${this.username}!!`);
 
-  const greetFriend = function () {
+  const greetFriend = () => {
     console.log(`Your best friend is ${this.username}!!`);
   };
 
