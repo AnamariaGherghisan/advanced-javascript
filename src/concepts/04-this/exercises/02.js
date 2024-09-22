@@ -11,3 +11,24 @@
     5.  Add a method getTotalPrice that returns the total rental price
     6.  Add a method getFormattedPrice that returns the formatted total rental price
 */
+export const vehicle = {
+  make: "Audi",
+  model: "A1",
+  year: 2023,
+  colour: "Black",
+  dailyRentalPrice: 49.99,
+  getInfo() {
+    return `Make: ${this.make} | Model: ${this.model} | Year: ${this.year} | Colour: ${this.colour}`;
+  },
+  isMOTRequired() {
+    return this.year < 2024;
+  },
+  getTotalPrice(numberOfDays = 1) {
+    const result = this.dailyRentalPrice * numberOfDays;
+
+    return Math.round(result * 100) / 100;
+  },
+  getFormattedPrice(numberOfDays = 1) {
+    return `Total Rental Price: $${this.getTotalPrice(numberOfDays)}`;
+  },
+};
