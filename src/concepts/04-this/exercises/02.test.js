@@ -24,7 +24,7 @@ describe("exercise-02", () => {
   });
 
   it("should return the expected total price for 1 day when getTotalPrice is invoked", () => {
-    expect(vehicle.getTotalPrice()).toEqual(49.99);
+    expect(vehicle.getTotalPrice(1)).toEqual(49.99);
   });
 
   it("should return the expected total price for 5 days when getTotalPrice is invoked", () => {
